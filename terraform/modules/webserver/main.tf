@@ -201,4 +201,5 @@ resource "aws_db_instance" "rds" {
   db_subnet_group_name   = var.subnet_group_id
   skip_final_snapshot  = true
   publicly_accessible =  true
+  deletion_protection = true
 }
